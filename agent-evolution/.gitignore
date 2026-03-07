@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage
+.coverage.*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Third-party libraries (if not using submodules)
+# third-party/
+
+# Docker
+docker-compose.override.yml
+
+# Secrets
+secrets/

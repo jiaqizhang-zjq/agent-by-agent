@@ -1,0 +1,37 @@
+# Agent自我进化项目依赖
+
+# 核心依赖
+# Python 3.8+
+
+# Agent框架
+langchain
+langgraph>=1.0.0
+
+# Memory
+# 从git仓库安装mem0
+-e git+ssh://git@github.com:mem0ai/mem0.git#egg=mem0
+
+# API框架
+fastapi
+uvicorn
+
+# 数据库
+sqlalchemy
+
+# 容器化
+docker
+
+# 测试
+pytest
+
+# 工具库
+requests
+beautifulsoup4
+numpy
+pandas
+
+# 版本控制
+gitpython
+
+# 其他
+python-dotenv

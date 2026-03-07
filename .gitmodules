@@ -1,0 +1,6 @@
+[submodule "agent-evolution/third-party/langchain"]
+	path = agent-evolution/third-party/langchain
+	url = https://github.com/langchain-ai/langchain.git
+[submodule "agent-evolution/third-party/mem0"]
+	path = agent-evolution/third-party/mem0
+	url = https://github.com/mem0ai/mem0.git
