@@ -5,7 +5,9 @@ __pycache__/
 
 # Virtual environment
 venv/
+venv313/
 env/
+.venv/
 
 # Environment variables
 .env
@@ -49,3 +51,15 @@ docker-compose.override.yml
 
 # Secrets
 secrets/
+
+# LangGraph API
+.langgraph_api/
+
+# Mem0
+.mem0/
+
+# Sessions
+sessions/
+
+# Data files (optional, uncomment if needed)
+# data/
