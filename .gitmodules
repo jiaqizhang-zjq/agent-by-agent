@@ -7,3 +7,6 @@
 [submodule "agent-evolution/third-party/deepagents"]
 	path = agent-evolution/third-party/deepagents
 	url = https://github.com/langchain-ai/deepagents.git
+[submodule "agent-evolution/third-party/langgraph"]
+	path = agent-evolution/third-party/langgraph
+	url = https://github.com/langchain-ai/langgraph.git
