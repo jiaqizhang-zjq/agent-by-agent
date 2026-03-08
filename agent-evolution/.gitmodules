@@ -1,0 +1,6 @@
+[submodule "third-party/deepagents"]
+	path = third-party/deepagents
+	url = https://github.com/langchain-ai/deepagents.git
+[submodule "third-party/langgraph"]
+	path = third-party/langgraph
+	url = https://github.com/langchain-ai/langgraph.git
