@@ -4,3 +4,6 @@
 [submodule "agent-evolution/third-party/mem0"]
 	path = agent-evolution/third-party/mem0
 	url = https://github.com/mem0ai/mem0.git
+[submodule "agent-evolution/third-party/deepagents"]
+	path = agent-evolution/third-party/deepagents
+	url = https://github.com/langchain-ai/deepagents.git

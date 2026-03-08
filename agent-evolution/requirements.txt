@@ -1,15 +1,21 @@
 # Agent自我进化项目依赖
 
 # 核心依赖
-# Python 3.8+
+# Python 3.11+
 
-# Agent框架
-langchain
-langgraph>=1.0.0
+# Agent框架 - 使用本地源码
+-e ./third-party/langchain/libs/core
+-e ./third-party/langchain/libs/langchain
+-e ./third-party/langgraph/libs/langgraph
+-e ./third-party/langgraph/libs/checkpoint
+-e ./third-party/langgraph/libs/prebuilt
+-e ./third-party/langgraph/libs/sdk-py
 
-# Memory
-# 从git仓库安装mem0
--e git+ssh://git@github.com:mem0ai/mem0.git#egg=mem0
+# DeepAgents - 使用本地源码
+-e ./third-party/deepagents/libs/deepagents
+
+# Memory - 使用本地源码
+-e ./third-party/mem0
 
 # API框架
 fastapi
@@ -35,3 +41,4 @@ gitpython
 
 # 其他
 python-dotenv
+pydantic

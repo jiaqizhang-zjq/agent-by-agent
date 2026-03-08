@@ -1,6 +1,6 @@
 # 第三方开源工具
 
-本目录用于存放项目依赖的开源工具。由于网络限制，我们使用pip安装方式引入这些工具，而不是直接克隆仓库。
+本目录用于存放项目依赖的开源工具源码。
 
 ## 依赖的开源工具
 
@@ -8,35 +8,59 @@
 
 1. **LangChain**
    - 用途：提供Agent开发的核心框架
-   - 安装：`pip install langchain`
+   - 源码：`./langchain`
    - 文档：https://docs.langchain.com/
 
 2. **LangGraph**
    - 用途：提供Agent工作流管理
-   - 安装：`pip install langgraph`
+   - 源码：`./langgraph`
    - 文档：https://docs.langchain.com/langgraph/
 
-3. **DeepAgent**
-   - 用途：提供深度强化学习Agent能力
-   - 安装：`pip install deepagent`
-   - 文档：https://github.com/your-username/deepagent
+3. **DeepAgents**
+   - 用途：提供深度Agent能力，包括Skills系统
+   - 源码：`./deepagents`
+   - 文档：https://github.com/langchain-ai/deepagents
 
 ### Memory
 
 1. **Mem0**
    - 用途：提供Agent记忆管理
-   - 安装：`pip install mem0`
+   - 源码：`./mem0`
    - 文档：https://github.com/mem0ai/mem0
 
-### 其他工具
+### Skills系统
 
-1. **Skill**
-   - 用途：技能管理系统
-   - 安装：根据具体实现选择合适的技能管理库
+DeepAgents提供了Skills系统，用于定义和管理Agent的技能。
 
-2. **MCP**
-   - 用途：多通道协议
-   - 安装：根据具体实现选择合适的MCP库
+#### Skill结构
+
+每个skill是一个目录，包含SKILL.md文件：
+
+```
+/skills/
+└── skill-name/
+    ├── SKILL.md          # Required: YAML frontmatter + markdown instructions
+    └── helper.py         # Optional: supporting files
+```
+
+#### SKILL.md格式
+
+```markdown
+---
+name: skill-name
+description: What the skill does
+license: MIT
+---
+
+# Skill Title
+
+Instructions for using this skill...
+```
+
+#### 示例Skills
+
+- `./deepagents/examples/content-builder-agent/skills/`
+- `./deepagents/examples/text-to-sql-agent/skills/`
 
 ## 安装方法
 
@@ -50,7 +74,7 @@ pip install -r requirements.txt
 
 1. **Agent框架**：在src/core/generators/和src/core/executors/中使用
 2. **Memory**：在src/agents/storage/中使用
-3. **Skill**：在src/tools/中使用
+3. **Skill**：在.agents/skills/中使用（遵循deepagents规范）
 4. **MCP**：在src/api/中使用
 
 ## 版本管理
