@@ -1,0 +1,10 @@
+{
+  "python_version": "3.13",
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "agent": "./src/agents/fortune_telling/langgraph_agent.py:graph"
+  },
+  "env": ".env"
+}
