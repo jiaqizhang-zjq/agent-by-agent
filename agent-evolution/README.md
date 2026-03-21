@@ -1,109 +1,125 @@
 # Agent自我进化项目
 
-## 项目概述
+## 项目状态：已归档
 
-本项目旨在构建一个Agent自我进化系统，利用Agent生成和优化完成特定目标任务的Agent。通过自动化的生成、执行和评估流程，实现Agent的持续进化和性能提升。
+**本项目已完成Demo阶段，所有产物已归档到`archive/`目录。**
 
-## 重要文档导航
+## 归档说明
 
-### 项目规划文档
-- **project.md**：给人看的项目规划文档，包含详细的设计思想和规划
-- **project_ai.md**：给AI看的项目规划文档，包含结构化的项目信息
+本项目是一个Demo项目，用于验证Agent自我进化的可行性。项目已完成以下工作：
 
-### 流程文档
-- **docs/iteration_process.md**：迭代过程文档，记录迭代过程和经验提取
-- **heartbeat.md**：心跳提醒文档，定时提醒AI关于Agent的进化计划
+### 已完成的工作
 
-### 技术文档
-- **third-party/README.md**：第三方开源工具说明，包含依赖的开源框架和库
+1. ✅ **算命Agent开发完成**
+   - 实现了基于LangChain的智能Agent
+   - 支持多轮对话和记忆功能
+   - 测试通过率100%（65个测试用例）
+
+2. ✅ **Skills系统集成**
+   - 实现了Skills系统
+   - 支持渐进式披露
+   - 集成了八字分析和算命Skills
+
+3. ✅ **文档完善**
+   - 完整的项目文档
+   - 迭代记录
+   - 经验池
 
 ## 目录结构
 
 ```
 agent-evolution/
-├── src/                  # 源代码目录
-│   ├── core/             # 核心引擎
-│   ├── agents/           # Agent管理
-│   ├── tasks/            # 任务管理
-│   ├── evaluation/       # 评估系统
-│   ├── tools/            # 工具库
-│   ├── utils/            # 通用工具
-│   └── api/              # API接口
-├── config/               # 配置文件
-├── tests/                # 测试目录
-├── docs/                 # 文档目录
-├── examples/             # 示例目录
-├── scripts/              # 脚本目录
-├── experience/           # 经验池目录
-│   ├── raw/              # 原始经验数据
-│   ├── processed/        # 处理后的经验
-│   ├── patterns/         # 识别的模式
-│   └── solutions/        # 解决方案库
-├── memos/                # 项目备忘录目录
-│   ├── daily/            # 每日记录
-│   ├── weekly/           # 每周记录
-│   ├── monthly/          # 每月记录
-│   └── quarterly/        # 季度记录
-├── third-party/          # 第三方开源工具
-├── project.md            # 项目规划文档（给人看）
-├── project_ai.md         # 项目规划文档（给AI看）
-├── heartbeat.md          # 心跳提醒文档
-├── requirements.txt      # 项目依赖
-└── README.md             # 项目导航文档
+├── archive/              # 归档目录（Demo产物）
+│   ├── src/             # 源代码
+│   ├── docs/            # 文档
+│   ├── tests/           # 测试
+│   ├── examples/        # 示例
+│   ├── data/            # 数据
+│   ├── api/             # API
+│   ├── experience/      # 经验池
+│   ├── config/          # 配置
+│   ├── skills/          # Skills
+│   └── README.md        # 归档说明
+├── third-party/         # 第三方库（保留）
+│   ├── langchain/       # LangChain框架
+│   ├── langgraph/       # LangGraph框架
+│   ├── mem0/            # Mem0记忆系统
+│   └── deepagents/      # DeepAgents框架
+├── .trae/               # Trae配置
+├── .env.example         # 环境变量示例
+├── .gitignore           # Git忽略配置
+├── project.md           # 项目规划文档
+├── project_ai.md        # AI项目规划文档
+├── heartbeat.md         # 心跳提醒文档
+├── requirements.txt     # 项目依赖
+└── README.md            # 本文件
 ```
 
-## 依赖说明
+## 第三方库说明
 
-### 核心依赖
-- **Python**：3.8+
-- **Agent框架**：LangChain、LangGraph、DeepAgent等
-- **Memory**：Mem0
-- **Skill**：技能管理系统
-- **MCP**：多通道协议
+项目使用了以下第三方开源库（保留在`third-party/`目录）：
 
-### 安装方法
+- **LangChain**: LangChain框架，用于构建LLM应用
+- **LangGraph**: LangGraph框架，用于构建有状态的Agent
+- **Mem0**: Mem0记忆系统，用于Agent记忆管理
+- **DeepAgents**: DeepAgents框架，用于Agent开发
 
-```bash
-pip install -r requirements.txt
-```
+## 归档内容
 
-## 快速开始
+所有Demo产物已归档到`archive/`目录，包括：
 
-1. **安装依赖**：`pip install -r requirements.txt`
-2. **配置项目**：修改 `config/` 目录下的配置文件
-3. **启动核心引擎**：`python src/core/engine.py`
-4. **运行示例**：`python examples/basic/example.py`
-5. **访问API**：默认地址 `http://localhost:8000`
+- **src/**: Agent源代码
+- **docs/**: 项目文档
+- **tests/**: 测试代码
+- **examples/**: 示例代码
+- **data/**: 数据文件
+- **api/**: API代码
+- **experience/**: 经验池
+- **config/**: 配置文件
+- **skills/**: Skills文件
 
-## 项目流程
+详细说明请查看 [archive/README.md](archive/README.md)
 
-1. **任务定义**：Boss给出具体任务目标和评估指标
-2. **Agent搭建**：AI负责基于开源项目或自主生成的方式搭建Agent
-3. **测试管理**：负责测试case的编造、执行、收集反馈、记录和分析优化方案
-4. **迭代优化**：基于测试结果和反馈信息，形成迭代计划，持续优化Agent
+## 项目成果
 
-## 经验池管理
+### 技术成果
 
-经验池用于存储和管理项目经验，包括：
-- **原始记录**：完整的迭代记录
-- **经验提取**：提取的经验教训和知识
-- **模式识别**：识别的模式和最佳实践
-- **解决方案**：可直接应用的解决方案和建议
+1. **Agent架构设计**
+   - 设计了可扩展的Agent架构
+   - 实现了多轮对话和记忆功能
+   - 集成了Skills系统
 
-## 心跳提醒机制
+2. **测试体系**
+   - 建立了完整的测试体系
+   - 65个测试用例，100%通过率
+   - 覆盖功能、性能、稳定性、安全等维度
 
-为确保Agent进化计划的持续推进，项目采用心跳提醒机制：
-- **每日提醒**：每天上午9:00
-- **每周提醒**：每周一上午9:00
-- **每月提醒**：每月1日上午9:00
-- **每季度提醒**：每季度首月1日上午9:00
+3. **文档体系**
+   - 完整的项目文档
+   - 迭代记录和经验池
+   - 版本管理和归档
 
-## 贡献指南
+### 经验总结
 
-1. **代码规范**：遵循PEP 8规范
-2. **提交信息**：清晰、简洁的提交信息
-3. **测试**：确保代码通过所有测试
-4. **文档**：更新相关文档
+1. **不要重复造轮子**
+   - 优先使用已有组件和框架
+   - 检查项目依赖和第三方库
+
+2. **测试驱动开发**
+   - 通过测试发现问题
+   - 针对性优化
+
+3. **文档先行**
+   - 详细记录开发过程
+   - 提取经验教训
+
+## 后续计划
+
+本项目已完成Demo阶段验证，后续可以：
+
+1. 基于归档内容进行产品化开发
+2. 使用第三方库构建新的Agent应用
+3. 参考经验总结优化开发流程
 
 ## 许可证
 
