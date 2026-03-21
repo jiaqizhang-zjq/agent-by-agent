@@ -1,170 +1,170 @@
 ---
 name: "readme-generator"
-description: "Generates comprehensive project documentation including README.md, architecture docs, and API docs. Invoke when user asks to create, update, or generate project documentation."
+description: "自动生成项目文档，包括README.md、架构文档和API文档。当用户要求创建、更新或生成项目文档时调用。"
 ---
 
-# README Generator
+# README生成器
 
-This skill helps generate comprehensive project documentation automatically.
+这个Skill帮助自动生成全面的项目文档。
 
-## When to Invoke
+## 何时调用
 
-Invoke this skill when:
-- User asks to "generate README"
-- User asks to "create project documentation"
-- User asks to "update README.md"
-- User mentions "project documentation" or "docs"
-- User wants to document a new project or feature
+在以下情况下调用此Skill：
+- 用户要求"生成README"
+- 用户要求"创建项目文档"
+- 用户要求"更新README.md"
+- 用户提到"项目文档"或"文档"
+- 用户想要为新项目或功能编写文档
 
-## What It Does
+## 功能说明
 
-1. **Analyzes Project Structure**
-   - Scans project directory structure
-   - Identifies main components and modules
-   - Detects technology stack (languages, frameworks, dependencies)
+1. **分析项目结构**
+   - 扫描项目目录结构
+   - 识别主要组件和模块
+   - 检测技术栈（语言、框架、依赖）
 
-2. **Generates Documentation**
-   - Creates comprehensive README.md
-   - Includes project overview, features, installation, usage
-   - Adds architecture diagrams if applicable
-   - Documents API endpoints and configuration
+2. **生成文档**
+   - 创建完整的README.md
+   - 包含项目概述、功能、安装、使用说明
+   - 添加架构图（如果适用）
+   - 文档化API端点和配置
 
-3. **Updates Existing Docs**
-   - Updates outdated documentation
-   - Maintains consistency across docs
-   - Preserves custom sections
+3. **更新现有文档**
+   - 更新过时的文档
+   - 保持文档一致性
+   - 保留自定义部分
 
-## Documentation Structure
+## 文档结构
 
-### README.md Template
+### README.md模板
 
 ```markdown
-# Project Name
+# 项目名称
 
-Brief description of the project.
+项目简介。
 
-## Features
+## 功能特性
 
-- Feature 1
-- Feature 2
-- Feature 3
+- 功能1
+- 功能2
+- 功能3
 
-## Installation
-
-\`\`\`bash
-# Installation commands
-\`\`\`
-
-## Quick Start
+## 安装
 
 \`\`\`bash
-# Quick start commands
+# 安装命令
 \`\`\`
 
-## Usage
+## 快速开始
 
-Basic usage examples.
+\`\`\`bash
+# 快速开始命令
+\`\`\`
 
-## Architecture
+## 使用方法
 
-Project architecture overview.
+基本使用示例。
 
-## API Reference
+## 架构
 
-API documentation (if applicable).
+项目架构概述。
 
-## Configuration
+## API参考
 
-Configuration options.
+API文档（如果适用）。
 
-## Contributing
+## 配置
 
-Contribution guidelines.
+配置选项。
 
-## License
+## 贡献
 
-License information.
+贡献指南。
+
+## 许可证
+
+许可证信息。
 ```
 
-## Process
+## 处理流程
 
-1. **Scan Project**
-   - Read package.json, requirements.txt, or similar
-   - Analyze directory structure
-   - Identify main entry points
+1. **扫描项目**
+   - 读取package.json、requirements.txt或类似文件
+   - 分析目录结构
+   - 识别主要入口点
 
-2. **Extract Information**
-   - Project name and description
-   - Dependencies and versions
-   - Scripts and commands
-   - Configuration files
+2. **提取信息**
+   - 项目名称和描述
+   - 依赖和版本
+   - 脚本和命令
+   - 配置文件
 
-3. **Generate Documentation**
-   - Create structured README.md
-   - Add relevant sections
-   - Include code examples
-   - Add badges and links
+3. **生成文档**
+   - 创建结构化的README.md
+   - 添加相关章节
+   - 包含代码示例
+   - 添加徽章和链接
 
-4. **Review and Refine**
-   - Check for completeness
-   - Verify accuracy
-   - Add missing sections
+4. **审查和完善**
+   - 检查完整性
+   - 验证准确性
+   - 添加缺失的章节
 
-## Examples
+## 示例
 
-### Example 1: New Project
+### 示例1：新项目
 
-User: "Generate README for this project"
+用户："为这个项目生成README"
 
-Action:
-1. Scan project structure
-2. Identify Python project with requirements.txt
-3. Generate comprehensive README.md
-4. Include installation, usage, and API docs
+操作：
+1. 扫描项目结构
+2. 识别Python项目（有requirements.txt）
+3. 生成完整的README.md
+4. 包含安装、使用和API文档
 
-### Example 2: Update Existing
+### 示例2：更新现有文档
 
-User: "Update the README"
+用户："更新README"
 
-Action:
-1. Read existing README.md
-2. Scan for changes in project
-3. Update outdated sections
-4. Preserve custom content
+操作：
+1. 读取现有README.md
+2. 扫描项目变更
+3. 更新过时的章节
+4. 保留自定义内容
 
-## Best Practices
+## 最佳实践
 
-1. **Keep it Simple**
-   - Clear, concise language
-   - Avoid jargon
-   - Use examples
+1. **保持简洁**
+   - 使用清晰、简洁的语言
+   - 避免专业术语
+   - 使用示例说明
 
-2. **Be Comprehensive**
-   - Cover all important aspects
-   - Include troubleshooting
-   - Add FAQ section
+2. **全面覆盖**
+   - 覆盖所有重要方面
+   - 包含故障排除
+   - 添加FAQ章节
 
-3. **Maintain Consistency**
-   - Use consistent formatting
-   - Follow documentation standards
-   - Keep sections organized
+3. **保持一致性**
+   - 使用一致的格式
+   - 遵循文档标准
+   - 保持章节有序
 
-4. **Update Regularly**
-   - Keep docs in sync with code
-   - Update after major changes
-   - Review periodically
+4. **定期更新**
+   - 保持文档与代码同步
+   - 重大变更后更新
+   - 定期审查
 
-## Output
+## 输出内容
 
-The skill will generate:
-- `README.md` - Main project documentation
-- Optional: `docs/` directory with additional docs
-- Optional: `CHANGELOG.md` if requested
-- Optional: `CONTRIBUTING.md` if requested
+此Skill将生成：
+- `README.md` - 主要项目文档
+- 可选：`docs/`目录及附加文档
+- 可选：`CHANGELOG.md`（如果需要）
+- 可选：`CONTRIBUTING.md`（如果需要）
 
-## Notes
+## 注意事项
 
-- Always verify generated content
-- Customize for specific project needs
-- Keep documentation up-to-date
-- Consider target audience
+- 始终验证生成的内容
+- 根据具体项目需求定制
+- 保持文档更新
+- 考虑目标受众
